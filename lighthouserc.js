@@ -2,13 +2,14 @@ module.exports = {
   ci: {
     collect: {
       // Static site example
-      staticDistDir: "./",
+      staticDistDir: "https://moneyview.in",
+      numberOfRuns: 5,
       // Dynamic site example
       // startServerCommand: 'npm run start',
     },
     upload: {
       /* Add configuration here */
-      target: "filesystem",
+      target: "temporary-public-storage",
     },
   },
 };
