@@ -1,12 +1,12 @@
 module.exports = {
   ci: {
     collect: {
-      // Static site example
-      staticDistDir: "./project/",
-      numberOfRuns: 3,
-      url: ["http://localhost:8080"],
+      // // Static site example
+      // staticDistDir: "./project/",
       // Dynamic site example
-      // startServerCommand: 'npm run start',
+      // startServerCommand: "npm run start",
+      url: "https://moneyview.in/",
+      numberOfRuns: 1,
     },
     assert: {
       assertions: {
@@ -16,7 +16,9 @@ module.exports = {
     },
     upload: {
       /* Add configuration here */
-      target: "temporary-public-storage",
+      target: "lhci",
+      serverBaseUrl: "http://localhost:9001/",
+      token: "0000ce91-d9be-42bb-af0b-98c84996f7a1",
     },
   },
 };
