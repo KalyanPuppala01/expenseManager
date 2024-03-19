@@ -3,10 +3,16 @@ module.exports = {
     collect: {
       // Static site example
       // staticDistDir: "https://moneyview.in",
-      numberOfRuns: 5,
+      numberOfRuns: 3,
       url: ["https://moneyview.in"],
       // Dynamic site example
       // startServerCommand: 'npm run start',
+    },
+    assert: {
+      assertions: {
+        "categories:performance": ["warn", { minScore: 0.6 }],
+        "categories:accessibility": ["error", { minScore: 0.6 }],
+      },
     },
     upload: {
       /* Add configuration here */
