@@ -2,8 +2,9 @@ module.exports = {
   ci: {
     collect: {
       // Static site example
-      staticDistDir: "https://moneyview.in",
+      // staticDistDir: "https://moneyview.in",
       numberOfRuns: 5,
+      url: ["https://moneyview.in"],
       // Dynamic site example
       // startServerCommand: 'npm run start',
     },
