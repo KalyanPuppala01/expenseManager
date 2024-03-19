@@ -16,5 +16,8 @@ jobs:
       - name: run Lighthouse CI
         run: |
           npm install -g @lhci/cli@0.3.x
+          npm install -D @lhci/cli @lhci/server sqlite3
+          npx lhci server --storage.storageMethod=sql --storage.sqlDialect=sqlite --storage.sqlDatabasePath=./db.sql
           export LHCI_GITHUB_APP_TOKEN=${{ secrets.LHCI_GITHUB_APP_TOKEN }}
-          lhci autorun --upload.target=temporary-public-storage || echo "LHCI failed!"
+          lhci server --basicAuth.username=kalyan --basicAuth.password=kalyan@2003
+          lhci autorun --upload.basicAuth.username=kalyan --upload.basicAuth.password=kalyan@2003
