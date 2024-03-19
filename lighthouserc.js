@@ -4,7 +4,7 @@ module.exports = {
       // Static site example
       // staticDistDir: "https://moneyview.in",
       numberOfRuns: 3,
-      url: ["https://moneyview.in"],
+      url: ["./project/"],
       // Dynamic site example
       // startServerCommand: 'npm run start',
     },
