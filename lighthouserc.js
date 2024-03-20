@@ -5,7 +5,7 @@ module.exports = {
       // staticDistDir: "./project/",
       // Dynamic site example
       // startServerCommand: "npm run start",
-      url: "https://moneyview.in/",
+      url: "https://moneyview.in/emi-calculator/bike-loan-emi-calculator",
       numberOfRuns: 3,
     },
     assert: {
