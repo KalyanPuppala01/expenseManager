@@ -1,1 +1,16 @@
-[]
+[
+  {
+    "name": "minScore",
+    "expected": 0.6,
+    "actual": 0.56,
+    "values": [
+      0.56
+    ],
+    "operator": ">=",
+    "passed": false,
+    "auditProperty": "performance",
+    "auditId": "categories",
+    "level": "warn",
+    "url": "https://moneyview.in/"
+  }
+]

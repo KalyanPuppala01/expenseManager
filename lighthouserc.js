@@ -6,7 +6,7 @@ module.exports = {
       // Dynamic site example
       // startServerCommand: "npm run start",
       url: "https://moneyview.in/",
-      numberOfRuns: 1,
+      numberOfRuns: 3,
     },
     assert: {
       assertions: {
